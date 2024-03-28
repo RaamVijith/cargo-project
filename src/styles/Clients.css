@@ -1,0 +1,11 @@
+.clients {
+    display: flex;
+    padding: 75px 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients img {
+    width: 20vw;
+
+}

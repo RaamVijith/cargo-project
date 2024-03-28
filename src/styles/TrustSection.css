@@ -1,0 +1,88 @@
+.trustSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 10%;
+    gap:50px
+
+}
+
+.left h4{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+
+.comand {
+    border: solid rgb(234, 233, 237);
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 5%;
+    width: 400px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.comand p {
+    font-size: 0.7rem;
+    color: gray;
+}
+.left h3 {
+    font-size: 1rem;
+    padding-left: 70%;
+}
+.left h5 {
+    color: gray;
+    font-size: 0.8rem;
+    padding-left: 70%;
+
+}
+
+.right h4 {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-bottom: 10%;
+    padding-top: 2%;
+
+}
+.right p {
+    font-size: 0.8rem;
+    padding: 0.5rem 0rem;
+    width: 350px;
+    
+
+}
+
+.right hr {
+    border-top: 1px double rgb(224, 222, 222);
+    color: rgb(220, 218, 218);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+
+.divider {
+    display: none;
+    border-top: 10px double rgb(224, 222, 222);
+    color: rgb(220, 218, 218);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+  
+/* Mobile view */
+@media screen and (max-width:700px) {
+    .trustSection {
+        flex-direction: column;     
+    
+    }
+    .divider {
+        display: block;
+        border-top: 10px double rgb(224, 222, 222);
+        color: rgb(220, 218, 218);
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    }
+}

@@ -1,0 +1,127 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10%;
+    top: 0;
+    z-index: 1000;
+    position:sticky;
+    background-color: white;
+    box-shadow: 1px 0px 5px rgb(230, 229, 229);
+
+}
+
+
+.header--nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.logo--inside{
+    display: flex;
+    flex-direction: row;
+}
+.logo--inside h2{
+    font-size: 2.2rem;
+    color: #39393a;
+    font-weight: 500;
+}
+.logo--inside img {
+    width: 3rem;
+}
+.header--right {
+    display: flex;
+    gap: 10px;
+}
+
+.nav--list {
+    display: flex;
+    align-items: center;
+    color: #777e90;
+    list-style: none;
+}
+.nav--list li a{ 
+    color:gray;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.nav--list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height:3px;
+    border-radius: 10px;
+    background-color:rgb(255, 204, 0) ;
+    position: absolute;
+    bottom: -1rem;
+    top:0;
+    left: 0;
+    transition: height 0.3s ease;
+}
+.nav--list a:hover::after {
+    height: 90%;
+    width: 5px;
+}
+
+.button1 button {
+    color: white;
+    background-color: rgb(255, 204, 0);
+    padding: 5px 15px;
+}
+.button2 button {
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+}
+.option-button {
+    display: none;
+}
+
+/* Responsive screen for mobile */
+ @media screen and (max-width:1300px) {
+    .header {
+        padding: 15px 5%;
+        transition: 0.3s ease-in;
+    }
+ }
+
+ @media screen and (max-width:700px) {
+    .header {
+        padding: 15px 3%;
+        transition: 0.3s ease-in;
+    }
+    .nav--list {
+        font-size: 10px;
+    }
+    .button1{
+        padding: 5px 5px;
+    }
+    .button2{
+        padding: 5px 5px;
+    }
+ }
+ @media screen and (max-width:600px) {
+    .nav--list {
+        display:none
+    }
+    .button1{
+        display: none;
+    }
+    .button2{
+        display: none;
+    }
+    .option-button{
+        display: inline;
+        cursor: pointer; 
+    }
+    .option-button button {
+        font-size: 30px;
+        cursor: pointer; 
+        background-color: white;
+    }
+ 
+ }

@@ -1,0 +1,42 @@
+.footerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerTop--left h1 {
+    color: white;
+    font-size: 3vw;
+    font-weight: 500;
+}
+.footerTop--left p {
+    color: white;
+    font-size: 1.2vw;
+    padding-top: 5px;
+}
+
+
+.footerTop--right input {
+    padding: 10px 5px;
+    width: 20vw;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+.footerTop--right button {
+    padding: 10px 5px;
+    width: 15vw;
+    border-radius: 5px;
+    background-color: rgba(255, 162, 0, 0.968);
+    color: white;
+}
+
+
+/* Mobile view */
+@media screen and (max-width:600px) {
+    .footerTop--left h1 {
+        font-size: 1.5rem;
+    }
+    .footerTop--left p {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,76 @@
+
+.footerMidle {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 50px 10px;
+    gap:10px
+}
+.aboutUs{
+    flex: 1;
+}
+.aboutUs h3{
+    color: white;
+    padding-bottom: 10px;
+}
+.aboutUs p {
+    color: rgb(212, 209, 209);
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+.LatestNews{
+    flex: 1;
+}
+.LatestNews h3{
+    color: white;
+    padding-bottom: 10px;
+}
+.LatestNews p {
+    color: rgb(212, 209, 209);
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+.Customer-Service{
+    flex: 1;
+}
+.Customer-Service h3{
+    color: white;
+    padding-bottom: 10px;
+}
+.Customer-Service p {
+    color: rgb(212, 209, 209);
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+.Customer-Service2{
+    flex: 1;
+}
+.Customer-Service2 h3{
+    color: white;
+    padding-bottom: 10px;
+}
+.customer-img {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.customer-img img{
+    width: 30%;
+    margin-right: 1%;
+}
+
+
+/* Mobile view */
+@media screen and (max-width:600px) {
+    .footerMidle {
+        display: none;
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 10px;
+        gap:10px
+    }
+    
+}

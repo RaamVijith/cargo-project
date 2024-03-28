@@ -1,0 +1,215 @@
+.home {
+    display: flex;
+    flex: 1;
+    margin-top: 2rem;
+    padding: 15px 10%;
+    align-items:center;
+    height: 40vw;
+}
+.content--left {
+    display: flex;
+    background-color: white;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    gap:1px;
+    flex-direction: row;
+    flex:1.5;
+    height: 80%;
+    margin-left: -1rem;
+    z-index: 100;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.content--left h2{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.content--left .span{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(255, 204, 0);
+    transition: 0.3s ease-in;
+}
+.content--left p {
+    padding-top: 1rem;
+
+}
+.content--left button {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 204, 0);
+    color: white;
+}
+
+.content--right {
+    flex: 3;
+    height: 100%;
+    margin-left: -4vw;
+  
+}
+.content--right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive screen for mobile */
+@media screen and (max-width:1300px) {
+    .content--left {      
+        padding-top: 2rem;
+        padding-left: 2rem;   
+        transition: 0.3s ease-in;
+    
+    }
+    .content--left h2{
+        font-size: 3rem;
+        font-weight: 400;
+        transition: 0.3s ease-in;
+
+    }
+    
+    .content--left .span{
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(255, 204, 0);
+        transition: 0.3s ease-in;
+    }
+    .content--left p {
+        margin-top: -1rem;
+        transition: 0.3s ease-in;
+
+    
+    }
+    .content--left button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        background-color: rgb(255, 204, 0);
+        color: white;
+        transition: 0.3s ease-in;
+
+    }
+ }
+
+ @media screen and (max-width:900px) {
+    .content--left { 
+        padding-top: 1rem;
+        padding-left: 1rem;   
+        transition: 0.3s ease-in;
+    
+    }
+    .content--left h2{
+        font-size: 2rem;
+        font-weight: 400;
+        transition: 0.3s ease-in;
+
+    }
+    .content--left .span{
+        font-size: 2rem;
+        font-weight: 700;
+        color: rgb(255, 204, 0);
+        transition: 0.3s ease-in;
+    }
+    .content--left p {
+        margin-top: -1rem;
+        font-size: 0.7rem;
+        transition: 0.3s ease-in;
+
+    
+    }
+    .content--left button {
+        padding: 0.5rem;
+        background-color: rgb(255, 204, 0);
+        color: white;
+        transition: 0.3s ease-in;
+
+    }
+ }
+
+ @media screen and (max-width:700px) {
+    .content--left { 
+        padding-top: 1rem;
+        padding-left: 1rem;   
+        transition: 0.3s ease-in;
+    
+    }
+    .content--left h2{
+        font-size: 1.7rem;
+        font-weight: 400;
+        transition: 0.3s ease-in;
+
+    }  
+    .content--left .span{
+        font-size: 2rem;
+        font-weight: 700;
+        color: rgb(255, 204, 0);
+        transition: 0.3s ease-in;
+    }
+    .content--left p {
+        display: none;
+        transition: 0.3s ease-in;
+
+    
+    }
+    .content--left button {
+        padding: 0.5rem;
+        background-color: rgb(255, 204, 0);
+        color: white;
+        transition: 0.3s ease-in;
+
+    }
+ }
+
+ @media screen and (max-width:600px) {
+    .home {
+        display: flex;
+        flex: 1;
+        align-items:center;
+        justify-content: center;
+        height: 100vw;
+        background-image: url("../assets/home-pic.png");
+        position: relative;
+    }
+    .content--left {
+        display: flex;
+        background-color: white;
+        gap:1px;
+        flex-direction:column;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 80%;
+        position: absolute;
+    }
+    .content--left h2{
+        font-size: 12vw;
+        font-weight: 400;
+    }
+    .content--left .span{
+        font-size: 12vw;
+        font-weight: 700;
+        color: rgb(255, 204, 0);
+    }
+    
+    .content--left button {
+        padding: 1rem;
+        background-color: rgb(255, 204, 0);
+        color: white;
+    }
+    
+    .content--right {
+        flex: 3;
+        display: none;
+        height: 100%;
+        margin-left: -4vw;
+      
+    }
+    .content--right img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+    
+ }

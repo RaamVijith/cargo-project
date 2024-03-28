@@ -1,0 +1,29 @@
+.footerButtom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+.footerButtom p {
+    color: white;
+    font-size: 1rem;
+}
+.footerButtom--div {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+
+/* Mobile view */
+@media screen and (max-width:600px) {
+    .footerButtom p {
+        color: white;
+        font-size: 2vw;
+    }
+    .footerButtom--div {
+        color: white;
+        font-size: 3vw;
+        margin-left: 5px;
+    }
+}
